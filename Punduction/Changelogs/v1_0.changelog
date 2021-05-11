@@ -1,0 +1,40 @@
+{
+	"Date": "15/12/2020",
+	"Version": "1.0",
+	"Items": [{
+			"Title": "New FANCY UI",
+			"Description": "UI 2.0 now with sleek rounded edges",
+			"Type": "Feature"
+		},
+		{
+			"Title": "Separation into views",
+			"Description": "Screens clearly separated by purpose",
+			"Type": "Feature"
+		},
+				{
+			"Title": "Ticker auto-run",
+			"Description": "Ticker can now at set intervals automatically",
+			"Type": "Feature"
+		},
+		{
+			"Title": "Streamqueue target",
+			"Description": "Can now easily change stream relevant to stream queue in UI",
+			"Type": "Enhancement"
+		},
+		{
+			"Title": "Saving prompts",
+			"Description": "Save buttons lights up when unsaved changes are present",
+			"Type": "Enhancement"
+		},
+		{
+			"Title": "Improved Error handling",
+			"Description": "Hopefully no more 503 errors",
+			"Type": "Bug"
+		},
+		{
+			"Title": "Fixed issues with flags",
+			"Description": "Flags should display correctly",
+			"Type": "Bug"
+		}
+	]
+}
