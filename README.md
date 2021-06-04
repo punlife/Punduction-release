@@ -96,3 +96,16 @@ https://youtu.be/tt_k1c6RL9c
 
 In the v1.0, Punduction doesn't have a native way of editing its own internal database of round names, countries, commentators and teams. However, there is still a relatively easy and quick way of editing the database and that is to use [DB Browser for SQLite](https://sqlitebrowser.org/). This tool will allow you to edit **PunductionRepository.db** file within the application directory which is where the database is stored. Please ensure you don't add any new fields manually as the app will just ignore them, do feel free to request additional information to be added through the suggestions/feedback form linked at the top of this file.
 
+-----------------------------
+
+## Default Shortcuts
+
+- Ctrl + S  - **Save scoreboard**
+- Ctrl + D  - **Swap players**
+- Ctrl + 1 (Number row)  - **Increment player 1 score**
+- Ctrl + 2 (Number row)  - **Increment player 2 score**
+
+Any of these shortcuts can be changed in the **Settings** tab. Please do pay attention not to use Shift and any other key as a combination, but you can use Shift+Another modifier (Ctrl/Alt) + Letter/Number/Key without issues. If you do end up using shift Windows throws out an exception and kills the application (you can reset the settings if you do gets stuck with this problem by deleting the settings file itself which is found within the **Settings** folder).
+
+
+
