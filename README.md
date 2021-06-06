@@ -65,6 +65,7 @@ https://youtu.be/CJtmCqIRaWw
 * If using HTML overlays make sure you press **Start Server** before starting and let the **Console** window run in the background.
 * After loading the appropriate data, choose the appropriate players, scores etc. and press save.
 * If you're trying to populate the streamqueue, ensure you set it on SmashGG, populate the stream name field with matching stream and press **Update stream queue**. This will load the stream queue and then you can choose a specific set and press **Populate stream queue** to update the player fields with corresponding players.
+* You can access the directories of the local server at http://localhost:8080/, from there you can navigate to wherever you placed your overlays and then put the full URL in a browser source in OBS etc.
 
 ### Video instructions
 
