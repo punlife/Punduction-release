@@ -1,9 +1,20 @@
 {
-	"Date": "15/12/2020",
+	"Date": "07/06/2021",
 	"Version": "1.0",
-	"Items": [{
+	"Items": [
+		{
 			"Title": "New FANCY UI",
 			"Description": "UI 2.0 now with sleek rounded edges",
+			"Type": "Feature"
+		},
+		{
+			"Title": "Challonge Integration",
+			"Description": "The more APIs the merrier, Challonge can now be used for pulling tournament data",
+			"Type": "Feature"
+		},
+		{
+			"Title": "Custom Shortcuts",
+			"Description": "A base set of shortcuts now exists, clicking is too mainstream",
 			"Type": "Feature"
 		},
 		{
@@ -11,9 +22,14 @@
 			"Description": "Screens clearly separated by purpose",
 			"Type": "Feature"
 		},
-				{
+		{
 			"Title": "Ticker auto-run",
 			"Description": "Ticker can now at set intervals automatically",
+			"Type": "Feature"
+		},
+		{
+			"Title": "New switchable themes",
+			"Description": "UI themes can be changed from the About screen to a set of different options",
 			"Type": "Feature"
 		},
 		{
@@ -25,6 +41,16 @@
 			"Title": "Saving prompts",
 			"Description": "Save buttons lights up when unsaved changes are present",
 			"Type": "Enhancement"
+		},
+		{
+			"Title": "Cleaner code",
+			"Description": "Refactor a bunch of code and made it far cleaner than it was previously",
+			"Type": "Enhancement"
+		},
+		{
+			"Title": "Improved SmashGG URL handling",
+			"Description": "Hopefully less issues when loading tournaments",
+			"Type": "Bug"
 		},
 		{
 			"Title": "Improved Error handling",
