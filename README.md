@@ -64,6 +64,7 @@ https://youtu.be/CJtmCqIRaWw
 * **Raw:** Input a CSV file of the following format: **name,prefix,country**. The prefix and country can be empty but please ensure the name is populated.
 * If using HTML overlays make sure you press **Start Server** before starting and let the **Console** window run in the background.
 * After loading the appropriate data, choose the appropriate players, scores etc. and press save.
+* If you're trying to populate the streamqueue, ensure you set it on SmashGG, populate the stream name field with matching stream and press **Update stream queue**. This will load the stream queue and then you can choose a specific set and press **Populate stream queue** to update the player fields with corresponding players.
 
 ### Video instructions
 
