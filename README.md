@@ -10,6 +10,12 @@ Hope you enjoy your time using Punduction!
 
 ------------------
 
+## Brand assets
+
+I've attached a couple of **Powered by Punduction** logos that you can place on your stream/overlays as a way of supporting the application, this is not in anyway mandatory but it makes me feel warm and fuzzy inside to see the application used across a range of streams. These assets can be found in the **brandAssets** folder.
+
+------------------
+
 ## Obtaining API keys for Scoreboard providers
 
 You are required to obtain your own API keys to use with Punduction, I am unable to give you access to my personal keys.
