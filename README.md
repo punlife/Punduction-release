@@ -1,6 +1,6 @@
 # Punduction Guide #
 
-Hello to the pretty brief guide to using Punduction, please follow these instructions as closely as you can to ensure a smooth process to getting you on your way. If you have any questions you can contact me on twitter https://twitter.com/PunLife_
+Hello to the pretty brief guide to using Punduction, please follow these instructions as closely as you can to ensure a smooth process to getting you on your way. If you have any questions you can contact me on [twitter](https://twitter.com/PunLife_)
 
 If you'd like to support the project you can donate at https://ko-fi.com/punlife, any donation is appreciated, thank you for your generosity!
 
