@@ -9,6 +9,9 @@ Hope you enjoy your time using Punduction!
 **Punlife**
 
 ------------------
+## What is Punduction
+
+Punduction is a controller for stream overlays that works with some of the available APIs for tournament hosting websites to flexibly populate your overlays, HTML or text based ones. 
 
 ## Brand assets
 
