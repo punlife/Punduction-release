@@ -1,0 +1,428 @@
+:root {
+  --blue: linear-gradient(to bottom, #3fb4bf, #bafafc, #28abb3, #b7f7fb, #1ca8aa);
+  --gold: linear-gradient(to bottom, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  --silver: linear-gradient(to bottom, #c4c4c4, #ffffff, #b4b4b4, #ffffff, #afafaf);
+  --black: linear-gradient(to bottom, #181818, #4b4b4b, #1d1d1d, #515151, #1a1a1a);
+  --red: linear-gradient(to bottom, #bf3f3f, #fcbaba, #b32828, #fbb7b7, #aa1c1c);
+  --yellow: linear-gradient(to right,#eab600,#eab600);
+  --green: linear-gradient(to right,#04a9f5,#00f473);
+  --aceGreen: linear-gradient(to bottom, #299a39, #53ea5a, #56c16d, #75ff7b);
+  --orange: linear-gradient(to bottom, #feaf04, #ffcb5a, #feaf04, #ffcb5a, #d99502);
+  
+  --separatorGradient: linear-gradient(to bottom, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+}
+
+.container {
+  display: inline-flex;
+  position: absolute;  
+  }
+  
+.shape {
+  width: 525px;
+  height: 45px;
+  margin: 0px;
+  background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,0.7));
+  background: url('layout/namebar_bg.png');
+  background-size: 525px 45px;
+  overflow: hidden;
+  position: relative;
+  
+  border-style: solid;
+  border-width: 0 10px 0 10px;
+  border-image: var(--silver);
+  border-image-slice: 1;
+
+  animation-name: namebar;
+  animation-duration: 1.5s;  
+  
+  display: inline-flex;
+  justify-content: flex-end;
+
+  
+  /* box-shadow: inset 0px 0px 10px rgba(0,0,0,0.7); */
+  /* box-shadow: 0 8px 8px -10px #000; */
+}
+
+.shapeL {
+  background: url('layout/namebar_bg.png');
+  background-size: 525px 45px;
+}
+
+.shapeR {
+  background: url('layout/namebar_bg_flip.png');
+  background-size: 525px 45px;
+}
+
+.base {
+  margin: 0px;
+  overflow: hidden;
+  position: relative;
+  display: flexbox;
+  justify-content: flex-end;
+  
+  border-style: solid;
+  border-width: 0 10px 0 10px;
+  border-image: var(--silver);
+  border-image-slice: 1;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.7);
+}
+.name {
+    width: 300px;
+    height: 45px;
+    background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,0.7));
+    background: url('layout/namebar_plain.png');
+    background-size: 525px 45px;
+    
+  animation-name: caster;
+  animation-duration: 1.5s;    
+}
+.twitter {
+  width: 225px;
+  height: 35px;
+  margin-left: 111px;
+  background: linear-gradient(rgba(14, 14, 14, 1),rgba(14, 14, 14, 0.7)); 
+  /*background: var(--silver); */
+  /*background: url('layout/namebar_plain.png'); */
+  /*background-size: 525px 35px; */
+  
+  animation-name: twitter;
+  animation-duration: 1.5s;    
+}
+.round {
+  margin-left: 10px;
+  width: 250px;
+  height: 45px;
+  position: absolute;
+  transform: skew(-35deg);   
+  border-width: 0 10px 0 0;
+  animation-name: round;
+  animation-duration: 1.5s;  
+  background: url('layout/namebar_plain.png');
+  /* background: linear-gradient(#04070a, #1c262d); */
+  clip-path: polygon(10px 0, 45px 45px, 260px 45px, 260px 0);
+}
+.round-left {    
+  transform: skew(35deg); 
+  border-width: 0 0 0 10px;
+  justify-content: flex-start;
+  clip-path: polygon(0 0, 0 45px, 100px 45px, 100px 0);
+}
+.extensionL {
+  z-index: 1;
+  width: 60px;
+  border-image: var(--silver);
+  border-image-slice: 1;
+  animation-name: extension;
+  animation-duration: 3s;  
+  background: url('layout/namebar_plain.png');
+  /* background: linear-gradient(#1c262d, #04070a); */
+  background-position: center; 
+  position: absolute;
+}
+.extensionR {
+  z-index: 1;
+  width: 60px;
+  border-image: var(--silver);
+  border-image-slice: 1;
+  animation-name: extension;
+  animation-duration: 3s;  
+  background: url('layout/namebar_plain.png');
+  /* background: linear-gradient(#1c262d, #04070a); */
+  background-position: center; 
+  position: absolute;
+}
+
+.type {
+  font-family: 'Kimberly', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  display: inline-flex;
+  
+  width: 430px;
+  height: 100%; 
+  white-space: nowrap;
+
+  justify-content: center;
+  align-items: center;
+
+
+  color: rgba(255, 255, 255, 0.8); 
+}
+
+
+
+.name-type {
+  font-family: 'Kimberly', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  display: inline-flex;
+  
+  width: 300px;
+  height: 45px; 
+  white-space: nowrap;
+
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 1); 
+}
+.twitter-type {
+  font-family: 'Kimberly', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  display: inline-flex;
+  
+  width: 225px;
+  height: 35px; 
+  white-space: nowrap;
+
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8); 
+}
+
+.small {    
+  font-size: 18px; 
+  font-weight: 700;
+  margin-left: 10px;    
+}
+.large {
+  font-family: 'Kimberly', sans-serif;
+  font-size: 28px;    
+  font-weight: 700;
+  width: 60px;
+  color: rgba(255, 255, 255, 1); 
+}
+
+.team {
+  /* background: var(--yellow); */
+  padding-right: 10px;
+}
+
+.gradient {
+  background: linear-gradient(90deg, rgba(212,175,55,1) 0%, rgba(236,154,21,1) 50%, rgba(212,175,55,1) 100%);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  background-clip: padding-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.logo {
+  display: inline-flex;
+  --width: 120px;
+  width: var(--width);
+  --height: 45px;  
+  height: var(--height);
+
+  justify-content: center;
+  align-items: center;
+  color: #fff; 
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+
+  /*background: linear-gradient(#1c262d, #04070a);*/
+  background-size: 120px 45px;
+  box-shadow: inset 0px 0px 10px #000;
+
+  line-height:1em;
+}
+
+.logoR {
+  background-size: 120px 45px;
+}
+
+.image {  
+  max-width: calc(1.1*var(--width));
+  max-height: calc(0.7*var(--height));  
+}
+
+.flag {  
+  width: calc(1.20*var(--width));
+  height: var(--height);
+  box-shadow: inset 0px 0px 10px #000;  
+  background-size: 100% 100% !important ;
+  position: absolute;
+}
+.score {    
+    width: 125px;
+    height: 75px;
+    margin: 0px;
+    
+    animation-name: score;
+    animation-duration: 1.5s;  
+    background: linear-gradient(rgba(72,72,72,0.9),rgba(35,35,35,0.9));
+}
+
+
+.flex {
+  margin-left: 10px;
+  justify-content: flex-start;
+}
+.fix {    
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+
+.right {    
+  transform: skew(35deg);    
+}
+
+.left {    
+  transform: skew(-35deg);    
+}
+
+.first { 
+  position: absolute;
+  height: 45px;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  animation: first 20s 0s infinite;
+}
+.second {
+  position: absolute;
+  animation: second 20s 0s infinite;
+}
+@font-face {
+  font-family: Kimberly;
+  src: url(../../assets/fonts/Kimberly.ttf);
+}
+.top3 {
+  text-transform: uppercase;
+  font-family: 'Kimberly', sans-serif;
+  font-size: 84px;    
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  padding: 50px;
+  margin: 0;
+}
+
+@keyframes namebar {
+  0%, 25%   {
+    width: 0px;
+    height: 0px;
+  }
+  50%   {
+    width: 0px;
+    height: 45px;
+  }
+  100%   {
+    width: 525px;
+    height: 45px;
+  }
+}
+@keyframes caster {
+  0%, 25%   {
+    width: 0px;
+    height: 0px;
+  }
+  50%   {
+    width: 0px;
+    height: 45px;
+  }
+  100%   {
+    width: 300px;
+    height: 45px;
+  }
+}
+@keyframes twitter {
+  0%, 25%   {
+    width: 0px;
+    height: 0px;
+  }
+  50%   {
+    width: 0px;
+    height: 35px;
+  }
+  100%   {
+    width: 225px;
+    height: 35px;
+  }
+}
+  @keyframes round {
+    0%, 50%   {
+      height: 0px;
+    }
+    100%   {
+      height: 45px;
+    }
+  }
+
+  @keyframes extension {
+    0%, 25%   {
+      width: 0px;
+      height: 0px;
+    }
+    50%   {
+      width: 0px;
+      height: 45px;
+    }
+    75%, 100%   {
+      width: 60px;
+      height: 45px;
+    }
+  }
+
+@keyframes score {
+  0%, 25%   {
+    width: 0px;
+    height: 0px;
+  }
+  50%   {
+    width: 0px;
+    height: 75px;
+  }
+  100%   {
+    width: 125px;
+    height: 75px;
+  }
+}
+
+
+
+@keyframes first {
+  0%, 100% {
+    margin-top: -100px;
+  }
+  3%, 47% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -100px;
+  }  
+}
+
+@keyframes second {
+    0%, 50%, 95%, 100% {
+      margin-top: 0;
+    }
+    3% {
+      margin-top: 100px;
+    }
+    47% {
+      margin-top: 100px;
+    }
+  }
+
+
+  

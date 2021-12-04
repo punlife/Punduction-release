@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style-info.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body onload="disableSocialsIfEmpty()">
+        <div class="grid-container">
+            <div class="Left-side">
+                <div
+                    id="p1image"
+                    class="character"
+                    style="background-image: url('../../assets/characterImages/mokujin.png');"
+                >
+                    <div class="flex-container large-text tilt-right">
+                        <div class="flex-container ">
+                            <div class="blue-label">
+                                <div class="tilt-left" id="p1team">
+                                    team
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <div class="flex-container tilt-left">
+                                    <div id="player1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-container box blue">
+                        <div class="twitter-type left" id="twitter-image-left">
+                            <img
+                                class="icon"
+                                src="layout/twitter.png"
+                            />
+                        </div>
+                        <div id="p1twitter"></div>
+                        <div class="twitch-type left" id="twitch-image-left">
+                            <img
+                                class="icon"
+                                src="layout/twitch.png"
+                            />
+                        </div>
+                        <div id="p1twitch"></div>
+                    </div>
+                    <div class="Left-info ">
+                        <div class="flex-container large-text tilt-right">
+                            <div class="flex-container ">
+                                <div class="blue-label">
+                                    <div class="tilt-left">
+                                        Average Placement
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <div class="flex-container tilt-left">
+                                        <div id="p1averagePlacement"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-container large-text shadow">
+                            Recent Placements
+                        </div>
+                        <div class="box blue" id="p1placement1"></div>
+                        <div class="box blue" id="p1placement2"></div>
+                        <div class="box blue" id="p1placement3"></div>
+                        <div class="box blue" id="p1placement4"></div>
+                        <div class="box blue" id="p1placement5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Right-side">
+                <div
+                    id="p2image"
+                    class="character"
+                    style="background-image: url('../../assets/characterImages/mokujin.png');"
+                >
+				<span class="p2Data">
+                    <div class="flex-container large-text tilt-left">
+                        <div class="flex-container ">
+                            <div class="stat">
+                                <div class="flex-container tilt-right">
+                                    <div id="player2"></div>
+                                </div>
+                            </div>
+                            <div class="red-label">
+                                <div class="tilt-right" id="p2team">
+                                    team
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-container box red">
+                        <div class="twitter-type left" id="twitter-image-right">
+                            <img
+                                class="icon"
+                                src="layout/twitter.png"
+                            />
+                        </div>
+                        <div id="p2twitter"></div>
+                        <div class="twitch-type left" id="twitch-image-right">
+                            <img
+                                class="icon"
+                                src="layout/twitch.png"
+                            />
+                        </div>
+                        <div id="p2twitch"></div>
+                    </div>
+                    <div class="Right-info ">
+                        <div class="flex-container large-text tilt-left">
+                            <div class="flex-container ">
+                                <div class="stat">
+                                    <div class="flex-container tilt-right">
+                                        <div id="p2averagePlacement"></div>
+                                    </div>
+                                </div>
+                                <div class="red-label">
+                                    <div class="tilt-right">
+                                        Average Placement
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-container large-text shadow">
+                            Recent Placements
+                        </div>
+                        <div class="box red" id="p2placement1"></div>
+                        <div class="box red" id="p2placement2"></div>
+                        <div class="box red" id="p2placement3"></div>
+                        <div class="box red" id="p2placement4"></div>
+                        <div class="box red" id="p2placement5"></div>
+                    </div>
+					</span>
+                </div>
+			</div>
+
+            <div class="Center">
+                <div class="empty-box">
+                    <div class="blue-text flex-container">
+                        <div id="p1SetWins"></div>
+                    </div>
+                    Head to Head Record
+                    <div class="red-text flex-container">
+                        <div id="p2SetWins"></div>
+                    </div>
+                </div>
+
+                <div class="empty-box">
+                    <div class="blue-text flex-container">
+                        <div id="h2hP1SetWinRate"></div>
+                        %
+                    </div>
+                    Head to Head Winrate
+                    <div class="red-text flex-container">
+                        <div id="h2hP2SetWinRate"></div>
+                        %
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            n = 11
+        </script>
+        <script src="read.js"></script>
+        <script type="text/javascript">
+            function disableSocialsIfEmpty() {
+                if (!document.getElementById('p1twitter').innerText) {
+                    document.getElementById(
+                        'twitter-image-left'
+                    ).style.visibility = 'hidden'
+                }
+                if (!document.getElementById('p1twitch').innerText) {
+                    document.getElementById(
+                        'twitch-image-left'
+                    ).style.visibility = 'hidden'
+                }
+
+                if (!document.getElementById('p2twitter').innerText) {
+                    document.getElementById(
+                        'twitter-image-right'
+                    ).style.visibility = 'hidden'
+                }
+                if (!document.getElementById('p2twitch').innerText) {
+                    document.getElementById(
+                        'twitch-image-right'
+                    ).style.visibility = 'hidden'
+                }
+            }
+        </script>
+    </body>
+</html>
