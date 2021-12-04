@@ -1,0 +1,77 @@
+{
+	"Date": "01/11/2021",
+	"Version": "1.1",
+	"Items": 
+	[
+		{
+			"Title": "Big boi feature",
+			"Description": "Can now create overlays of Top4/8/16 brackets of different stages of bracket from SmashGG",
+			"Type": "Feature"
+		},
+		{
+			"Title": "Mistakes happen",
+			"Description": "Can now reset the scoreboard",
+			"Type": "Feature"
+		},
+		{
+			"Title": "Defaults are great",
+			"Description": "You can now set default providers, output types and stream name",
+			"Type": "Feature"
+		},
+		{
+			"Title": "Player pronouns",
+			"Description": "Punduction now automatically pulls player pronouns from SmashGG (filtering via whitelist from database available too)",
+			"Type": "Feature"
+		},
+		{
+			"Title": "Too lazy to save",
+			"Description": "Settings for auto-saving are now available (only auto-saves scoreboard, disabled by default)",
+			"Type": "Feature"
+		},
+		{
+			"Title": "Custom fields",
+			"Description": "There are now 4 custom fields available to be set (both property and value it corresponds to)",
+			"Type": "Feature"
+		},
+		{
+			"Title": "Got it memorised?",
+			"Description": "Going between tabs now keeps the tournament loaded",
+			"Type": "Enhancement"
+		},
+		{
+			"Title": "The more the better",
+			"Description": "Recent placements now average over a higher amount of results",
+			"Type": "Enhancement"
+		},
+		{
+			"Title": "PNGs aren't enough",
+			"Description": "Character art is no longer limited to .PNG filetype (any filetype will be picked up)",
+			"Type": "Enhancement"
+		},
+		{
+			"Title": "Character art custom path",
+			"Description": "Can now set where to look for character art",
+			"Type": "Enhancement"
+		},
+		{
+			"Title": "API Keys in Settings",
+			"Description": "Can now set/change API keys within the app",
+			"Type": "Enhancement"
+		},
+		{
+			"Title": "Loading bugs",
+			"Description": "Fixed some bugs related to loading certain URLs from SmashGG and Challonge ",
+			"Type": "Bug"
+		},
+		{
+			"Title": "Fixed issue with Settings saving",
+			"Description": "Settings in memory now correctly update on apply on top of saving to disk",
+			"Type": "Bug"
+		},
+		{
+			"Title": "Fixed XBOX connectivity in SmashGG",
+			"Description": "Fixed the issue and added some defensive code for any future occurences of similar bugs",
+			"Type": "Bug"
+		}
+	]
+}

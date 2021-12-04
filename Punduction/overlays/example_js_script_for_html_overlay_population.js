@@ -26,6 +26,7 @@ function processJson(jsonRequest) {
   var p1image="", p2image="";
   var p1twitter= "", p2twitter= "";
   var p1twitch= "", p2twitch= "";
+  var p1Pronouns= "", p2Pronouns= "";
   var caster1="", caster2="", caster3="", caster4="";
   var casterTwitter1="", casterTwitter2="", casterTwitter3="", casterTwitter4="";
   var round="", bestof="";
@@ -45,6 +46,7 @@ function processJson(jsonRequest) {
   p1image = "background-image: url(" + characterImagePath + json["player1"]["image"] + ");";  
   p1twitter = json["player1"]["twitter"];
   p1twitch = json["player1"]["twitch"];
+  p1Pronouns = json["player1"]["pronouns"];
   
   //RecentPlacementPlayer1
   p1averagePlacement = json["placement1"]["AveragePlacement"];
@@ -63,6 +65,8 @@ function processJson(jsonRequest) {
   p2image = "background-image: url(" + characterImagePath + json["player2"]["image"] + ");";  
   p2twitter = json["player2"]["twitter"];
   p2twitch = json["player2"]["twitch"];
+  p2Pronouns = json["player2"]["pronouns"];
+
   //RecentPlacementPlayer2
   p2averagePlacement = json["placement2"]["AveragePlacement"];
   p2placement1 = json["placement2"]["RecentPlacement1"];
@@ -148,41 +152,55 @@ function processJson(jsonRequest) {
       document.getElementById("p1logo").src = p1logo;
       document.getElementById("p2logo").src = p2logo;
       break;
-	case 11:
-	  document.getElementById("player1").innerHTML = player1;
+    case 11:
+      document.getElementById("player1").innerHTML = player1;
       document.getElementById("player2").innerHTML = player2;
-	  document.getElementById("p1team").innerHTML = p1team;
-	  document.getElementById("p2team").innerHTML = p2team;
-	  document.getElementById("p1twitter").innerHTML = p1twitter;
+      document.getElementById("p1team").innerHTML = p1team;
+      document.getElementById("p2team").innerHTML = p2team;
+      document.getElementById("p1twitter").innerHTML = p1twitter;
       document.getElementById("p2twitter").innerHTML = p2twitter;
-	  document.getElementById("p1twitch").innerHTML = p1twitch;
+      document.getElementById("p1twitch").innerHTML = p1twitch;
       document.getElementById("p2twitch").innerHTML = p2twitch;
-	  document.getElementById("p1image").style = p1image; 
+      document.getElementById("p1image").style = p1image; 
       document.getElementById("p2image").style = p2image; 
-	  document.getElementById("p1averagePlacement").innerHTML = p1averagePlacement;
-	  document.getElementById("p2averagePlacement").innerHTML = p2averagePlacement;  
-	  document.getElementById("p1placement1").innerHTML = p1placement1;
-	  document.getElementById("p1placement2").innerHTML = p1placement2;  
-	  document.getElementById("p1placement3").innerHTML = p1placement3;
-	  document.getElementById("p1placement4").innerHTML = p1placement4; 
-	  document.getElementById("p1placement5").innerHTML = p1placement5; 
-	  document.getElementById("p2placement1").innerHTML = p2placement1;
-	  document.getElementById("p2placement2").innerHTML = p2placement2;  
-	  document.getElementById("p2placement3").innerHTML = p2placement3;
-	  document.getElementById("p2placement4").innerHTML = p2placement4; 
-	  document.getElementById("p2placement5").innerHTML = p2placement5; 
-	  document.getElementById("p2placement4").innerHTML = p2placement4; 
-	  document.getElementById("p2placement5").innerHTML = p2placement5; 
-	  document.getElementById("p1SetWins").innerHTML = p1SetWins; 
-	  document.getElementById("p2SetWins").innerHTML = p2SetWins; 
-	  document.getElementById("h2hP1SetWinRate").innerHTML = h2hP1SetWinRate; 
-	  document.getElementById("h2hP2SetWinRate").innerHTML = h2hP2SetWinRate; 
-	  break;
+      document.getElementById("p1averagePlacement").innerHTML = p1averagePlacement;
+      document.getElementById("p2averagePlacement").innerHTML = p2averagePlacement;  
+      document.getElementById("p1placement1").innerHTML = p1placement1;
+      document.getElementById("p1placement2").innerHTML = p1placement2;  
+      document.getElementById("p1placement3").innerHTML = p1placement3;
+      document.getElementById("p1placement4").innerHTML = p1placement4; 
+      document.getElementById("p1placement5").innerHTML = p1placement5; 
+      document.getElementById("p2placement1").innerHTML = p2placement1;
+      document.getElementById("p2placement2").innerHTML = p2placement2;  
+      document.getElementById("p2placement3").innerHTML = p2placement3;
+      document.getElementById("p2placement4").innerHTML = p2placement4; 
+      document.getElementById("p2placement5").innerHTML = p2placement5; 
+      document.getElementById("p2placement4").innerHTML = p2placement4; 
+      document.getElementById("p2placement5").innerHTML = p2placement5; 
+      document.getElementById("p1SetWins").innerHTML = p1SetWins; 
+      document.getElementById("p2SetWins").innerHTML = p2SetWins; 
+      document.getElementById("h2hP1SetWinRate").innerHTML = h2hP1SetWinRate; 
+      document.getElementById("h2hP2SetWinRate").innerHTML = h2hP2SetWinRate; 
+    break;
 	case 12:
 	  document.getElementById("player1").innerHTML = player1;
       document.getElementById("player2").innerHTML = player2;
 	  break;
+  case 13:
+      document.getElementById("player1").innerHTML = player1;
+      document.getElementById("player2").innerHTML = player2;
+      document.getElementById("p1team").innerHTML = p1team;
+      document.getElementById("p2team").innerHTML = p2team;
+      document.getElementById("p1country").style = p1country;
+      document.getElementById("p2country").style = p2country;
+      document.getElementById("p1score").innerHTML = p1score;
+      document.getElementById("p2score").innerHTML = p2score;
+      document.getElementById("p1logo").src = p1logo;
+      document.getElementById("p2logo").src = p2logo;
+      document.getElementById("p1pronouns").innerHTML = p1Pronouns;
+      document.getElementById("p2pronouns").innerHTML = p2Pronouns;
+    break;
 	default:
-      break;
+    break;
   }
 }

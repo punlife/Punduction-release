@@ -45,15 +45,8 @@ Make sure you download the prerequisites provided on the release page of the Pun
 
 ### Written instructions
 
-1. Navigate to api_keys.data file and add the API keys you have generated previously within the empty speech marks for the relevant services you will be using (if you only plan to use Challonge you don't need a SmashGG key etc.)
+1. Add your API keys to the application through the "Settings" tab and save your options
 
-2. Start the application using PunductionUI.exe
-
-   
-
-### Video instructions
-
-https://youtu.be/CJtmCqIRaWw
 
 -----------------------------
 
@@ -115,6 +108,8 @@ In the v1.0, Punduction doesn't have a native way of editing its own internal da
 - Ctrl + D  - **Swap players**
 - Ctrl + 1 (Number row)  - **Increment player 1 score**
 - Ctrl + 2 (Number row)  - **Increment player 2 score**
+- Ctrl + Shift + 1 (Number row)  - **Decrement player 1 score**
+- Ctrl + Shift + 2 (Number row)  - **Decrement player 2 score**
 
 Any of these shortcuts can be changed in the **Settings** tab. Please do pay attention not to use Shift and any other key as a combination, but you can use Shift+Another modifier (Ctrl/Alt) + Letter/Number/Key without issues. If you do end up using shift Windows throws out an exception and kills the application (you can reset the settings if you do gets stuck with this problem by deleting the settings file itself which is found within the **Settings** folder).
 
